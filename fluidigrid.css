@@ -1,0 +1,154 @@
+:root {
+  /* Grid related var*/
+  --grid-tc-12: repeat(12, 1fr);
+  --grid-tc-1: repeat(1, 1fr);
+  --grid-gap: 1.25vw;
+  --grid-gap-s: 1.25vw; /* if you want to use specific value for smaller screens */
+}
+
+/* Normalizer */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Grid system */
+grid,
+.grid {
+  display: grid;
+  grid-template-columns: var(--grid-tc-12);
+  grid-column-gap: var(--grid-gap);
+  grid-row-gap: var(--grid-gap);
+  align-content: stretch;
+}
+
+grid,
+.grid > *,
+div {
+  align-self: center;
+}
+
+*[class~="cs1"] {
+  grid-column-start: 1;
+}
+*[class~="cs2"] {
+  grid-column-start: 2;
+}
+*[class~="cs3"] {
+  grid-column-start: 3;
+}
+*[class~="cs4"] {
+  grid-column-start: 4;
+}
+*[class~="cs5"] {
+  grid-column-start: 5;
+}
+*[class~="cs6"] {
+  grid-column-start: 6;
+}
+*[class~="cs7"] {
+  grid-column-start: 7;
+}
+*[class~="cs8"] {
+  grid-column-start: 8;
+}
+*[class~="cs9"] {
+  grid-column-start: 9;
+}
+*[class~="cs10"] {
+  grid-column-start: 10;
+}
+*[class~="cs11"] {
+  grid-column-start: 11;
+}
+*[class~="cs12"] {
+  grid-column-start: 12;
+}
+
+*[class~="ce1"] {
+  grid-column-end: 2;
+}
+*[class~="ce2"] {
+  grid-column-end: 3;
+}
+*[class~="ce3"] {
+  grid-column-end: 4;
+}
+*[class~="ce4"] {
+  grid-column-end: 5;
+}
+*[class~="ce5"] {
+  grid-column-end: 6;
+}
+*[class~="ce6"] {
+  grid-column-end: 7;
+}
+*[class~="ce7"] {
+  grid-column-end: 8;
+}
+*[class~="ce8"] {
+  grid-column-end: 9;
+}
+*[class~="ce9"] {
+  grid-column-end: 10;
+}
+*[class~="ce10"] {
+  grid-column-end: 11;
+}
+*[class~="ce11"] {
+  grid-column-end: 12;
+}
+*[class~="ce12"] {
+  grid-column-end: 13;
+}
+
+/* Debugging */
+
+.debug {
+  background-color: lightcoral;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+  grid,
+  .grid {
+    grid-template-columns: var(--grid-tc-1);
+    grid-column-gap: var(--grid-gap-s);
+    grid-row-gap: var(--grid-gap-s);
+  }
+  grid,
+  .grid > *[class~="cs1"],
+  *[class~="cs2"],
+  *[class~="cs3"],
+  *[class~="cs4"],
+  *[class~="cs5"],
+  *[class~="cs6"],
+  *[class~="cs7"],
+  *[class~="cs8"],
+  *[class~="cs9"],
+  *[class~="cs10"],
+  *[class~="cs11"],
+  *[class~="cs12"] {
+    grid-column-start: 1;
+  }
+  grid,
+  .grid > *[class~="ce1"],
+  *[class~="ce2"],
+  *[class~="ce3"],
+  *[class~="ce4"],
+  *[class~="ce5"],
+  *[class~="ce6"],
+  *[class~="ce7"],
+  *[class~="ce8"],
+  *[class~="ce9"],
+  *[class~="ce10"],
+  *[class~="ce11"],
+  *[class~="ce12"] {
+    grid-column-end: 13;
+  }
+}
