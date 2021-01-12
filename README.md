@@ -9,7 +9,7 @@ Fluidigrid is a simple and lightweight CSS helper for building quick and efficie
 
 ### Structure
 
-Fluidigrid setup is simple, it is based on 12 column `grid-template-columns`. Each of the 12 cells are using the `fr` (fractional unit). When going belowe `1024px` the layout switches the `1fr`.
+Fluidigrid setup is simple, it is based on 12 column `grid-template-columns`. Each of the 12 cells are using the `fr` (fractional unit). When going below `1024px` the layout switches the `1fr`.
 
 ### How to use
 
@@ -19,7 +19,7 @@ You can create your own `grid` html element or add a class `.grid` to the wrappe
 
 - 2KB file
 - Change to `:root`values for customization
-- Use the [Fluidigrid Generator](https://fluidigrid.com/generator) to create your own naming convention for custom experienc
+- Use the [Fluidigrid Generator](https://fluidigrid.com/generator) to create your own naming convention for custom experience.
 
 #### Check the examples
 
